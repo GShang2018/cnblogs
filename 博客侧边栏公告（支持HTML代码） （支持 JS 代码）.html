@@ -1,0 +1,84 @@
+<script type="text/javascript">
+	// 设置公告
+	var news = '博客园主题又更新啦~，细节等你发现！';
+
+	// 设置博客信息
+	var myprofile = [{
+		blogName: "GShang",
+		blogAvatar: "https://pic.cnblogs.com/avatar/1489774/20190708183140.png",
+		blogSign: "Stay hungry,Stay foolish.",
+		blogFollow: "follow('30807ee3-3273-4cff-72df-08d619358b99')",
+		QQ: "1220949046",
+		Github: "https://github.com/GShang2018",
+		WeChat: "https://img2018.cnblogs.com/blog/1489774/201910/1489774-20191015183429352-318054137.jpg"
+	}];
+
+	// 设置首页轮播,根据数量增减即可
+	var mybanner = [
+
+		{
+			url: "https://www.cnblogs.com/gshang/p/tools.html",
+			img: "https://www.kanjiantu.com/images/2019/07/05/post169393a677253c679.png",
+			title: "实用工具分享"
+		},
+
+		{
+			url: "https://www.cnblogs.com/gshang/p/movie.html",
+			img: "https://www.kanjiantu.com/images/2019/07/05/post4242f1ce89576c2f3.png",
+			title: "动画电影分享"
+		},
+
+		{
+			url: "https://www.cnblogs.com/gshang/p/11185613.html",
+			img: "https://img2018.cnblogs.com/blog/1489774/201909/1489774-20190923190114426-2061049622.png",
+			title: "VIP视频解析"
+		},
+
+		{
+			url: "https://www.cnblogs.com/gshang/p/11135154.html",
+			img: "https://www.kanjiantu.com/images/2019/07/05/post2b40b83305f79d463.png",
+			title: "常用网站集合"
+		},
+
+	];
+
+	// 设置导航栏扩展,根据数量增减即可
+
+	var mynav = [{
+			id: "blog_nav_cnblogs",
+			url: "https://home.cnblogs.com",
+			title: "园子"
+		},
+		{
+			id: "blog_nav_maintain",
+			url: "https://www.cnblogs.com/gshang/p/11149316.html",
+			title: "维护"
+		},
+
+		{
+			id: "blog_nav_frieds",
+			url: "https://www.cnblogs.com/gshang/p/11149804.html",
+			title: "友链"
+		},
+		{
+			id: "blog_nav_theme",
+			url: "javascript:changeTheme()",
+			title: "切换主题"
+		}
+	];
+
+	// 此处调用设计好的函数,不需要的功能注释掉即可
+	loadNewsinfo(news);
+	setFavio(myprofile); // 网页tab图像
+	loadThemeColor(); //导入主题颜色
+	extendNav(mynav); // 导航栏扩展
+	loadBanner(mybanner); //首页轮播
+	setPostSideBar(); //侧边栏目录
+	loadMobileContent(); //移动端目录功能栏
+	blankTarget(); //文章链接新窗口打开
+	copyCode(); //代码块复制
+	tableScorll(); //表格滚动
+	mymd(); //自定义语法
+	runCode(); //文章内部运行代码
+	ninghtTip(); //夜间模式提醒
+</script>
